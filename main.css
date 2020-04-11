@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 main {
-    margin: .5rem 10rem 0 10rem;   
+  margin: 0.5rem 8rem 0 8rem;
 }
 
 body {
@@ -11,7 +11,7 @@ body {
 }
 
 #product-overview {
-  background: url("./freedom2.jpg");
+  background: url("./freedom.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -42,23 +42,73 @@ body {
 
 .plan--highlighted {
   background: #514760;
-  color: #f7fcef;
+  color: #bbbbbb;
   box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.5);
 }
 
 .plan__annotation {
-    background: #96777c;
-    padding:8px;
-    color: #f7fcef;
-    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.5);
-    border-radius: 8px;
-
+  background: #f7fcef;
+  padding: 8px;
+  color: #514760;
+  box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.5);
+  border-radius: 8px;
 }
+
+.plan__title {
+  color: #1f1a24;
+}
+
+.plan__price {
+  color: #f7fcef;
+}
+
+.plan__features {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.plan__feature {
+  margin: 8px 0;
+}
+
+.button {
+    font-size:14px;
+    color: #f7fcef;
+    background: #bfa3a3;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid #f7fcef;
+}
+
+.button:hover {
+    color: #bfa3a3;
+    background: #f7fcef;
+}
+
+.button:focus{
+    outline:none;
+}
+
+.button__highlighted {
+    font-size:14px;
+    color: #f7fcef;
+    background: #514760;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid #f7fcef;
+}
+
+.button__highlighted:hover {
+    color: #514760;
+    background: #f7fcef;
+}
+
 
 .main-header {
   width: 100%;
   background: #514760;
-  padding: 8px 16px;
+  padding: 10px 16px;
 }
 
 .main-header > div {
@@ -71,6 +121,10 @@ body {
   text-decoration: none;
   font-weight: bold;
   font-size: 25px;
+}
+
+.main-header__brand:hover {
+  border-bottom: 2px solid #f7fcef;
 }
 
 .main-nav {
@@ -101,18 +155,20 @@ body {
 .main-nav__item a:hover,
 .main-nav__item a:active {
   cursor: pointer;
-  border-bottom: 5px solid #f7fcef;
+  border-bottom: 2px solid #f7fcef;
 }
 
 .main-nav__item--cta a {
-  color: #514760;
-  background: #dddddb;
+  color: #f7fcef;
+  background: #514760;
   padding: 8px 16px;
   border-radius: 8px;
+  border: 1px solid #f7fcef;
 }
 
 .main-nav__item--cta a:hover,
 .main-nav__item--cta a:active {
   background: #f7fcef;
-  border: none;
-}
+  color: #514760;
+  border: 1px solid #f7fcef;
+}   
