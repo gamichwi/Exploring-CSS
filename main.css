@@ -121,13 +121,13 @@ body {
   text-decoration: none;
   font-weight: bold;
   font-size: 25px;
-  padding: 8px 6px;
+  padding: 6px 4px;
 }
 
 .main-header__brand:hover {
   border: 2px solid #f7fcef;
   border-radius: 8px;
-  padding: 6px 4px;
+  padding: 4px 2px;
   background: #f7fcef;
   color: #514760;
 }
