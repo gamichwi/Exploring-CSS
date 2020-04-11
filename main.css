@@ -121,16 +121,21 @@ body {
   text-decoration: none;
   font-weight: bold;
   font-size: 25px;
+  padding: 8px 6px;
 }
 
 .main-header__brand:hover {
-  border-bottom: 2px solid #f7fcef;
+  border: 2px solid #f7fcef;
+  border-radius: 8px;
+  padding: 6px 4px;
+  background: #f7fcef;
+  color: #514760;
 }
 
 .main-nav {
   display: inline-block;
   text-align: right;
-  width: calc(100% - 90px);
+  width: calc(100% - 120px);
   vertical-align: middle;
 }
 
