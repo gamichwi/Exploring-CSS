@@ -46,7 +46,13 @@ body {
   box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.5);
 }
 
-.plan annotation {
+.plan__annotation {
+    background: #96777c;
+    padding:8px;
+    color: #f7fcef;
+    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.5);
+    border-radius: 8px;
+
 }
 
 .main-header {
