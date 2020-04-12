@@ -104,6 +104,45 @@ body {
     background: #f7fcef;
 }
 
+#key-features {
+  background: #514760;
+  margin-top: 80px;
+  padding: 16px;
+}
+
+#key-features .section-title {
+  color: #f7fcef;
+  margin: 32px;
+}
+
+.key-feature__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.key-feature {
+  display: inline-block;
+  width:30%;
+  vertical-align: top;
+}
+
+.key-feature__image {
+  background: #bfa3a3;
+  width: 128px;
+  height: 128px;
+  border: 2px solid #1f1a24;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.key-feature__description {
+  text-align: center;
+  font-weight: bold;
+  color: #f7fcef;
+  font-size: 20px;
+}
 
 .main-header {
   width: 100%;
