@@ -18,6 +18,12 @@
   text-align: center;
 }
 
+.plan__list {
+  width:80%;
+  margin:auto;
+  text-align: center;
+}
+
 .plan {
   background: #bfa3a3;
   text-align: center;
@@ -34,7 +40,7 @@
   box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.5);
 }
 
-.plan__annotation {
+._annotation {
   background: #f7fcef;
   padding: 8px;
   color: #514760;

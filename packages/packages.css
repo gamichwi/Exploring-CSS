@@ -7,6 +7,7 @@ main {
   margin: 16px 0;
   border: 4px solid #514760;
   border-radius: 8px;
+  border-left: none;
 }
 
 .package:hover,
@@ -35,12 +36,21 @@ main {
   background: #f7fcef;
 }
 
+.clearfix {
+    clear: both;
+}
+
 #plus {
   background: rgba(191, 163, 163, 0.95);
 }
 
 #free {
   background: rgba(247, 252, 239, 0.95);
+  float: right;
+  border-right: none;
+  border-left: 4px solid #514760;
+  text-align: right;
+
 }
 
 #free .package__subtitle {
