@@ -40,7 +40,7 @@
   box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.5);
 }
 
-._annotation {
+.plan__annotation {
   background: #f7fcef;
   padding: 8px;
   color: #514760;
