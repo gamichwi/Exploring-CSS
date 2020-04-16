@@ -1,36 +1,36 @@
 # Exploring-CSS
 To explore and learn best practice CSS techniques.
 
-Creating a fake hosting website to explore different CSS Techniques like:
+Creating a fake hosting website to re-visit old and explore new CSS Techniques like:
 
-* Selectors, combinators, styling rules ✅
+* Selectors, combinators, styling rules ☑
 
-* Properties, values and decalarations ✅
+* Properties, values and decalarations ☑
 
-* Specifity and inheritance ✅
+* Specifity and inheritance ☑
 
-* Box Model
+* Box Model 𝤿
 
-* Positioning elements
+* Positioning elements 𝤿
 
-* Styling backgrounds (gradients, images, etc.)
+* Styling backgrounds (gradients, images, etc.) 𝤿
 
-* Which dimensions to use
+* Which dimensions to use 𝤿
 
-* How JS and CSS interact
+* How JS and CSS interact 𝤿
 
-* Reponsive design and "Mobile First"
+* Reponsive design and "Mobile First" 𝤿
 
-* Styling forms and form inputs
+* Styling forms and form inputs 𝤿
 
-* Working with text, font, and text styles
+* Working with text, font, and text styles 𝤿
 
-* Flexbox
+* Flexbox 𝤿
 
-* CSS Grid
+* CSS Grid 𝤿
 
-* Transformations and Animations
+* Transformations and Animations 𝤿
 
-* Future proofing CSS
+* Future proofing CSS 𝤿
 
-* Sass
+* Sass 𝤿
