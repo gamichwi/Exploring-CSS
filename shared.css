@@ -9,6 +9,8 @@ body {
 
 .main-header {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   background: #514760;
   padding: 10px 16px;
@@ -44,9 +46,9 @@ body {
 }
 
 .main-nav__items {
-  margin: 0px;
+  margin: 0;
   padding: 0;
-  display: inline-block;
+  list-style:none;
 }
 
 .main-nav__item {
@@ -119,6 +121,7 @@ body {
   padding: 8px 16px;
   border-radius: 8px;
   border: 1px solid #f7fcef;
+  cursor: pointer;
 }
 
 .button:hover {
