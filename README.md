@@ -13,7 +13,7 @@ Creating a fake hosting website to re-visit old and explore new CSS Techniques l
 
 * Positioning elements 𝤿
 
-* Styling backgrounds (gradients, images, etc.) 𝤿
+* Styling backgrounds (gradients, images, etc.)  ☑
 
 * Which dimensions to use 𝤿
 
