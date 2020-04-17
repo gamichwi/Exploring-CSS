@@ -28,6 +28,8 @@ body {
   font-weight: bold;
   font-size: 25px;
   padding: 6px 4px;
+  position: relative;
+  bottom: 14px;
 }
 
 .main-header__brand:hover {
@@ -38,10 +40,17 @@ body {
   color: #514760;
 }
 
+
+.main-header__brand img {
+  height: 50px;
+  position: relative;
+  top:12px;
+}
+
 .main-nav {
   display: inline-block;
   text-align: right;
-  width: calc(100% - 120px);
+  width: calc(100% - 170px);
   vertical-align: middle;
 }
 
