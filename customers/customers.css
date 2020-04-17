@@ -59,6 +59,7 @@
   .testimonial__subtitle a:hover,
   .testimonial__subtitle a:active {
     color: #514760;
+    border-bottom: 2px solid #514760;
     /* border: 2px solid #514760; */
     /* border-radius: 8px; */
 
