@@ -11,7 +11,7 @@ Creating a fake hosting website to re-visit old and explore new CSS Techniques l
 
 * Box Model 𝤿
 
-* Positioning elements 𝤿
+* Positioning elements ☑
 
 * Styling backgrounds (gradients, images, etc.)  ☑
 
