@@ -1,4 +1,7 @@
 # Exploring-CSS
+View the mockup hosting website here: https://exploring-css-h6utm8k1v.now.sh/
+
+#Purpose:
 To explore and learn best practice CSS techniques.
 
 Creating a fake hosting website to re-visit old and explore new CSS Techniques like:
