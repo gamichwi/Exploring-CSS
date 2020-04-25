@@ -129,7 +129,8 @@ body {
 .mobile-nav__item--cta a:active {
   background: #f7fcef;
   color: #514760;
-  border: 1px solid #f7fcef;
+  border: 1px solid #514760;
+  box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.3);
 }
 
 .main-footer {
