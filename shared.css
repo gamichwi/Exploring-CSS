@@ -5,18 +5,18 @@
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
-  overflow-x: hidden;  
+  overflow-x: hidden;
 }
 
 .backdrop {
   position: fixed;
-  display:none;
+  display: none;
   top: 0;
   left: 0;
   z-index: 100;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0,0,0,0.5)
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .main-header {
@@ -63,7 +63,7 @@ body {
   font-size: 1.5rem;
   padding: 6px 4px;
   position: relative;
-  bottom: .875rem;
+  bottom: 0.875rem;
   vertical-align: middle;
 }
 
@@ -75,11 +75,10 @@ body {
   color: #514760;
 }
 
-
 .main-header__brand img {
   height: 3.125rem;
   position: relative;
-  top:.75rem;
+  top: 0.75rem;
 }
 
 .main-nav {
@@ -92,7 +91,7 @@ body {
 .main-nav__items {
   margin: 0;
   padding: 0;
-  list-style:none;
+  list-style: none;
 }
 
 .main-nav__item {
@@ -105,7 +104,7 @@ body {
   color: #f7fcef;
   text-decoration: none;
   font-weight: bold;
-  padding: 0.187rem  0;
+  padding: 0.187rem 0;
 }
 
 .main-nav__item a:hover,
@@ -164,7 +163,7 @@ body {
 }
 
 .button {
-  font-size: .875rem;
+  font-size: 0.875rem;
   color: #f7fcef;
   background: #bfa3a3;
   padding: 0.5rem 1rem;
@@ -173,7 +172,8 @@ body {
   cursor: pointer;
 }
 
-.button:hover {
+.button:hover,
+.button:active {
   color: #bfa3a3;
   background: #f7fcef;
 }
@@ -191,9 +191,11 @@ body {
   border: 1px solid #f7fcef;
 }
 
-.button__highlighted:hover {
+.button__highlighted:hover,
+.button__highlighted:active {
   color: #514760;
   background: #f7fcef;
+  border: 1px solid #514760;
 }
 
 .mobile-nav {

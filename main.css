@@ -10,17 +10,38 @@
   /* background-image: linear-gradient(to bottom, #bfa3a3, #514760 ); */
   /* background-image: radial-gradient(circle 300px at 15% 10%,  #bfa3a3,#514760); */
   width: 100vw;
-  height: 89vh;
+  height: 60vh;
   position: relative;
-  margin-top: 2.75rem;
+  margin-top: 4rem;
 }
 
 #product-overview h1 {
   color: #000000;
   font-weight: lighter;
   position: absolute;
-  top: 10%;
+  top: 7%;
   left: 3%;
+  font-size: 1rem;
+}
+
+@media (min-width: 40rem) {
+  #product-overview {
+    background-position: 50% 40%;
+    height: 80vh;
+  }
+  #product-overview h1 {
+    font-size: 1.3rem;  
+  }
+}
+
+@media (min-width: 80rem) {
+  #product-overview {
+    background-position: 50% 40%;
+    height: 85vh;
+  }
+  #product-overview h1 {
+    font-size: 2rem;  
+  }
 }
 
 .section-title {
