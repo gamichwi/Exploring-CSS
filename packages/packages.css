@@ -1,5 +1,5 @@
 main {
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 .background {
@@ -38,7 +38,7 @@ main {
   top: 0;
   right: 0;
   margin: 1.2rem;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   color: #f7fcef;
   background: #514760;
   padding: 0.5rem;
@@ -92,4 +92,26 @@ main {
 
 #premium .package__subtitle {
   color: #1f1a24;
+}
+
+@media (min-width: 40rem) {
+  main {
+    margin: 1rem auto;
+    max-width: 90rem;
+  }
+}
+
+@media (min-width: 90rem) {
+  .package {
+    border-left: 4px solid #514760;
+  }
+
+  #free {
+    border-right: 4px solid #514760;
+  }
+
+  #free:hover,
+  #free:active {
+    border-right-color: #1f1a24;
+  }
 }
