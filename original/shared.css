@@ -5,7 +5,6 @@
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
-  overflow-x: hidden;
 }
 
 main {
@@ -21,7 +20,7 @@ main {
   z-index: 100;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .main-header {
@@ -29,7 +28,7 @@ main {
   position: fixed;
   top: 0;
   left: 0;
-  background: #514760;
+  background: #2ddf5c;
   padding: 0.5rem 1rem;
   z-index: 1;
 }
@@ -56,25 +55,24 @@ main {
 .toggle-button__bar {
   width: 100%;
   height: 0.2rem;
-  background: #f7fcef;
+  background: black;
   display: block;
   margin: 0.6rem 0;
 }
 
 .main-header__brand {
-  /* height: 2.5rem;
+  color: #0e4f1f;
+  text-decoration: none;
+  font-weight: bold;
+  height: 2.5rem;
+  /* width: 20px; */
   display: inline-block;
-  vertical-align: middle; */
-  display: none;
+  vertical-align: middle;
 }
 
 .main-header__brand img {
   height: 100%;
-}
-
-.main-header__brand img:hover {
-  box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.3);
-  border-radius: 1.4rem;
+  /* width: 100%; */
 }
 
 .main-nav {
@@ -82,91 +80,66 @@ main {
 }
 
 .main-nav__items {
-  /* margin: 0;
+  margin: 0;
   padding: 0;
-  list-style: none; */
-  display: none;
+  list-style: none;
 }
 
 .main-nav__item {
-  margin: 0 1rem;
   display: inline-block;
-  display: none;
+  margin: 0 1rem;
 }
 
 .main-nav__item a,
-.mobile-nav__item {
-  color: #f7fcef;
+.mobile-nav__item a {
   text-decoration: none;
+  color: #0e4f1f;
   font-weight: bold;
   padding: 0.2rem 0;
 }
 
 .main-nav__item a:hover,
 .main-nav__item a:active {
-  cursor: pointer;
-  border-bottom: 2px solid #f7fcef;
+  color: white;
+  border-bottom: 5px solid white;
 }
 
 .main-nav__item--cta a,
 .mobile-nav__item--cta a {
-  color: #f7fcef;
-  background: #514760;
+  color: white;
+  background: #ff1b68;
   padding: 0.5rem 1rem;
   border-radius: 8px;
-  border: 1px solid #f7fcef;
 }
 
 .main-nav__item--cta a:hover,
 .main-nav__item--cta a:active,
 .mobile-nav__item--cta a:hover,
 .mobile-nav__item--cta a:active {
-  background: #f7fcef;
-  color: #514760;
-  border: 1px solid #514760;
-  box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.3);
+  color: #ff1b68;
+  background: white;
+  border: none;
 }
 
 @media (min-width: 40rem) {
   .toggle-button {
     display: none;
   }
-  .main-header__brand {
-    height: 2.5rem;
+
+  .main-nav {
     display: inline-block;
+    text-align: right;
+    width: calc(100% - 44px);
     vertical-align: middle;
-    display: block;
   }
-  .mobile-nav {
-    display: block;
-    position: fixed;
-    z-index: 101;
-    top: 0;
-    left: 0;
-    background: #f7fcef;
-    width: 80%;
-    height: 100vh;
-  }
-  .main-nav__items {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display:block;
-  }
-}
-.main-nav {
-  display: inline-block;
-  text-align: right;
-  width: calc(100% - 5rem);
-  vertical-align: middle;
 }
 
 .main-footer {
-  background-color: #000000;
-  color: #f7fcef;
+  background: black;
   padding: 2rem;
   margin-top: 3rem;
 }
+
 .main-footer__links {
   list-style: none;
   margin: 0;
@@ -175,31 +148,29 @@ main {
 }
 
 .main-footer__link {
-  display: block;
-  margin: 0;
-  padding: 0 1rem;
+  display: inline-block;
+  margin: 1rem 0;
 }
 
 .main-footer__link a {
-  color: #f7fcef;
+  color: white;
   text-decoration: none;
 }
 
 .main-footer__link a:hover,
 .main-footer__link a:active {
-  cursor: pointer;
-  border-bottom: 2px solid #f7fcef;
+  color: #ccc;
 }
 
 .mobile-nav {
   display: none;
-  /* position: fixed;
+  position: fixed;
   z-index: 101;
   top: 0;
   left: 0;
-  background: #f7fcef;
+  background: white;
   width: 80%;
-  height: 100vh; */
+  height: 100vh;
 }
 
 .mobile-nav__items {
@@ -220,43 +191,28 @@ main {
 }
 
 .button {
-  font-size: 1rem;
-  color: #f7fcef;
-  background: #bfa3a3;
-  padding: 0.5rem 1rem;
+  background: #0e4f1f;
+  color: white;
+  font: inherit;
+  border: 1.5px solid #0e4f1f;
+  padding: 0.5rem;
   border-radius: 8px;
-  border: 1px solid #f7fcef;
+  font-weight: bold;
   cursor: pointer;
 }
 
 .button:hover,
 .button:active {
-  color: #bfa3a3;
-  background: #f7fcef;
+  background: white;
+  color: #0e4f1f;
 }
 
 .button:focus {
   outline: none;
 }
 
-.button__highlighted {
-  font-size: 1rem;
-  color: #f7fcef;
-  background: #514760;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  border: 1px solid #f7fcef;
-}
-
-.button__highlighted:hover,
-.button__highlighted:active {
-  color: #514760;
-  background: #f7fcef;
-  border: 1px solid #514760;
-}
-
 .open {
-  display: block !important;
+    display: block !important;
 }
 
 @media (min-width: 40rem) {

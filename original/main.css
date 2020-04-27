@@ -1,83 +1,81 @@
 #product-overview {
-  background: url("./images/freedom.jpg") 50% 40% / cover no-repeat border-box,
-    linear-gradient(to bottom, #bfa3a3, #514760);
-  /* background: linear-gradient(to top, rgb(81, 71, 96, 0.6) 10%, transparent), url("./images/freedom.jpg") 50% 40%/cover no-repeat border-box, #514760; */
-  /* background-image: url("./freedom.jpg");
-  background-size: cover;
-  background-position: 50% 40%;
-  background-repeat: no-repeat;
-  background-origin: border-box;
-  background-clip: border-box;   */
-  /* background-image: linear-gradient(to bottom, #bfa3a3, #514760 ); */
-  /* background-image: radial-gradient(circle 300px at 15% 10%,  #bfa3a3,#514760); */
+  background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
+    url("images/freedom.jpg") center/cover no-repeat border-box,
+    #ff1b68;
+  /* background-image: url("freedom.jpg");
+    background-size: cover;
+    background-position: left 10% bottom 20%; */
+  /* background-repeat: no-repeat;
+    background-origin: border-box;
+    background-clip: border-box; */
+  /* background-image: linear-gradient(180deg, red 70%, blue 60%, rgba(0,0,0,0.5)); */
+  /* background-image: radial-gradient(ellipse farthest-corner at 20% 50%, red, blue 70%, green); */
   width: 100vw;
-  height: 60vh;
+  height: 33vh;
+  /* border: 5px dashed red; */
   position: relative;
-  margin-top: 3.5rem;
 }
 
 #product-overview h1 {
-  color: #000000;
-  font-weight: lighter;
+  color: white;
+  font-family: "Anton", sans-serif;
   position: absolute;
-  top: 7%;
+  bottom: 5%;
   left: 3%;
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
 
 @media (min-width: 40rem) and (min-height: 40rem) {
   #product-overview {
-    background-position: 50% 40%;
-    height: 80vh;
+    height: 40vh;
+    background-position: 50% 25%;
   }
-  #product-overview h1 {
-    font-size: 1.5rem;
-  }
-}
 
-@media (min-width: 80rem) {
-  #product-overview {
-    background-position: 50% 40%;
-    height: 85vh;
-  }
   #product-overview h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }
 
 .section-title {
+  color: #2ddf5c;
   text-align: center;
 }
 
 .plan {
-  background: #bfa3a3;
+  background: #d5ffdc;
   text-align: center;
   padding: 1rem;
   margin: 0.5rem 0;
   width: 100%;
-  vertical-align: middle;
 }
 
 .plan--highlighted {
-  background: #514760;
-  color: #bbbbbb;
-  /* box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.5); */
+  background: #19b84c;
+  color: white;
 }
 
 .plan__annotation {
-  background: #f7fcef;
+  background: white;
+  color: #19b84c;
   padding: 0.5rem;
-  color: #514760;
-  box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
 }
 
 .plan__title {
-  color: #1f1a24;
+  color: #0e4f1f;
 }
 
 .plan__price {
-  color: #f7fcef;
+  color: #858585;
+}
+
+.plan--highlighted .plan__title {
+  color: white;
+}
+
+.plan--highlighted .plan__price {
+  color: #0e4f1f;
 }
 
 .plan__features {
@@ -95,6 +93,7 @@
     width: 100%;
     text-align: center;
   }
+
   .plan {
     display: inline-block;
     width: 30%;
@@ -104,18 +103,19 @@
   }
 
   .plan--highlighted {
-    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
   }
 }
 
 #key-features {
-  background: #514760;
-  margin-top: 1rem;
+  background: #ff1b68;
+  margin-top: 5rem;
   padding: 1rem;
 }
 
 #key-features .section-title {
-  color: #f7fcef;
+  color: white;
+  margin: 2rem;
 }
 
 .key-feature__list {
@@ -126,10 +126,10 @@
 }
 
 .key-feature__image {
-  background: radial-gradient(circle 75px at 65% 65%, #bfa3a3, #f7fcef);
+  background: #ffcede;
   width: 128px;
   height: 128px;
-  border: 2px solid #1f1a24;
+  border: 2px solid #424242;
   border-radius: 50%;
   margin: auto;
   padding: 1.5rem;
@@ -138,18 +138,22 @@
 .key-feature__description {
   text-align: center;
   font-weight: bold;
-  color: #f7fcef;
+  color: white;
   font-size: 1.2rem;
 }
 
-@media (min-width:40rem){
+@media (min-width: 40rem) {
   .key-feature {
     display: inline-block;
     width: 30%;
-    max-width:25rem;
+    max-width: 25rem;
     vertical-align: top;
   }
 }
+
+/* h1 {
+    font-family: sans-serif;
+} */
 
 .modal {
   position: fixed;

@@ -70,10 +70,10 @@
   margin: 0.2rem;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 65rem) {
   .testimonial {
     margin: 1rem auto;
-    max-width: 90rem;
+    max-width: 70rem;
   }
 
   .testimonial__image-container {
@@ -84,7 +84,7 @@
   .testimonial__info {
     display: inline-block;
     vertical-align: middle;
-    width: 30%;
+    width: 35%;
   }
   
 }

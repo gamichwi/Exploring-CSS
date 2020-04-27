@@ -97,11 +97,11 @@ main {
 @media (min-width: 40rem) {
   main {
     margin: 1rem auto;
-    max-width: 90rem;
+    max-width: 80rem;
   }
 }
 
-@media (min-width: 90rem) {
+@media (min-width: 80rem) {
   .package {
     border-left: 4px solid #514760;
   }
