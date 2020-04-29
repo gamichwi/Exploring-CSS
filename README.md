@@ -21,11 +21,11 @@ Creating a fake hosting website to re-visit old and explore new CSS Techniques l
 
 * Which dimensions to use ☑
 
-* How JS and CSS interact 𝤿
+* How JS and CSS interact ☑
 
-* Reponsive design and "Mobile First" 𝤿
+* Reponsive design and "Mobile First" ☑
 
-* Styling forms and form inputs 𝤿
+* Styling forms and form inputs ☑
 
 * Working with text, font, and text styles 𝤿
 
