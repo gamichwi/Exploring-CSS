@@ -1,6 +1,6 @@
 # Exploring-CSS
 Take some provided basic HTML code and explore different CSS styling techniques.
-View the mockup hosting website here: https://exploring-css-h6utm8k1v.now.sh/
+View the mockup hosting website here: https://exploring-css.now.sh/
 
 # Purpose:
 To explore and learn best practice CSS techniques.
