@@ -155,8 +155,8 @@
   display: none;
   z-index: 200;
   top: 20%;
-  left: 30%;
-  width: 40%;
+  /* left: 30%;
+  width: 40%; */
   background: white;
   padding: 1rem;
   border: 1px solid #ccc;
