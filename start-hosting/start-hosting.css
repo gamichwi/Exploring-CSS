@@ -62,12 +62,19 @@ main {
 .signup-form input[type="checkbox"]:checked:after {
   background: rgba(191, 163, 163, 0.25);
   border-color: #514760;
-  content: '✔';
+  content: "✔";
   text-align: center;
-  font:inherit;
+  font: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.signup-form input.invalid,
+.signup-form select.invalid,
+.signup-form :invalid {
+  border-color: red !important;
+  background: rgba(255, 84, 84, 0.5);
 }
 
 .signup-form button[type="submit"] {
