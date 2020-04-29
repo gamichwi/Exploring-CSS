@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>uHost Signup</title>
-    <link rel="shortcut icon" href="../images/favicon2-nobg.png">
+    <link rel="shortcut icon" href="../favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Anton|Montserrat:400,700" rel="stylesheet">
     <link rel="stylesheet" href="../shared.css">
     <link rel="stylesheet" href="start-hosting.css">
@@ -22,7 +22,7 @@
                 <span class="toggle-button__bar"></span>
             </button>
             <a href="../index.html" class="main-header__brand">
-                <img src="../images/favicon2-nobg.png" alt="uHost - Your favorite hosting company">
+                <img src="../images/uhost-icon.png" alt="uHost - Your favorite hosting company">
             </a>
         </div>
         <nav class="main-nav">
@@ -56,19 +56,19 @@
         <h1 class="signup-title">Awesome! Let's dive right in!</h1>
         <form action="index.html" class="signup-form">
             <label for="title">Title</label>
-            <select id="title" required>
+            <select id="title">
                 <option value="mr">Mr.</option>
                 <option value="ms">Ms.</option>
             </select>
             <label for="first-name">First name</label>
-            <input type="text" id="first-name">
+            <input type="text" id="first-name" required>
             <label for="last-name">Last name</label>
-            <input type="text" id="last-name">
+            <input type="text" id="last-name" required>
             <label for="email">E-Mail</label>
-            <input type="email" id="email">
+            <input type="email" id="email" required>
             <label for="password">Password</label>
-            <input type="password" id="password">
-            <input type="checkbox" id="agree-terms">
+            <input type="password" id="password" required>
+            <input type="checkbox" id="agree-terms" required>
             <label for="agree-terms">Agree to
                 <a href="#">Terms &amp; Conditions</a>
             </label>
@@ -76,17 +76,17 @@
         </form>
     </main>
     <footer class="main-footer">
-            <nav>
-              <ul class="main-footer__links">
+        <nav>
+            <ul class="main-footer__links">
                 <li class="main-footer__link">
-                  <a href="#">Support</a>
+                    <a href="#">Support</a>
                 </li>
                 <li class="main-footer__link">
-                  <a href="#">Terms of Use</a>
+                    <a href="#">Terms of Use</a>
                 </li>
-              </ul>
-            </nav>
-          </footer>
+            </ul>
+        </nav>
+    </footer>
     <script src="../shared.js"></script>
 </body>
 
