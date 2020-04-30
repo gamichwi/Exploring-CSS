@@ -13,7 +13,7 @@ Creating a fake hosting website to re-visit old and explore new CSS Techniques l
 
 * Specifity and inheritance ☑
 
-* Box Model 𝤿
+* Box Model ☑
 
 * Positioning elements ☑
 

@@ -82,7 +82,7 @@ main {
 }
 
 #premium {
-  background: rgba(81, 71, 96, 0.95);
+  background: rgb(81, 71, 96);
 }
 
 #premium .package__title {

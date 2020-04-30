@@ -28,6 +28,7 @@
   #product-overview {
     background-position: 50% 40%;
     height: 80vh;
+    font-weight: lighter;
   }
   #product-overview h1 {
     font-size: 1.5rem;
