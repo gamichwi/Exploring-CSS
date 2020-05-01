@@ -27,9 +27,9 @@ Creating a fake hosting website to re-visit old and explore new CSS Techniques l
 
 * Styling forms and form inputs ☑
 
-* Working with text, font, and text styles 𝤿
+* Working with text, font, and text styles ☑
 
-* Flexbox 𝤿
+* Flexbox ☑
 
 * CSS Grid 𝤿
 
