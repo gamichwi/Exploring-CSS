@@ -6,11 +6,13 @@ main {
   text-align: center;
   font-size: 1.8rem;
   color: #514760;
-  margin: 1rem;
 }
 
 .signup-form {
-  padding: 1rem;
+  padding: auto;
+  display: grid;
+  grid-auto-rows: 2.5rem;
+  grid-row-gap: 0.25rem;
 }
 
 .signup-form label {
@@ -21,7 +23,6 @@ main {
 .signup-form input,
 .signup-form select {
   display: block;
-  margin-top: 1rem;
   width: 100%;
 }
 
@@ -82,7 +83,6 @@ main {
 
 .signup-form button[type="submit"] {
   display: block;
-  margin-top: 1rem;
   font-size: 0.875rem;
   color: #f7fcef;
   background: #514760;
@@ -102,5 +102,13 @@ main {
   .signup-form {
     margin: auto;
     width: 30rem;
+    grid-template-columns: 10rem auto;
+    grid-row-gap: 2rem;
+    grid-column-gap: 0.5rem;
   }
+
+  .signup-form__checkbox {
+    grid-column: span 2;
+  }
+
 }
