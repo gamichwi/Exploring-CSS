@@ -1,15 +1,6 @@
 #product-overview {
   background: url("./images/freedom.jpg") 50% 40% / cover no-repeat border-box,
     linear-gradient(to bottom, #bfa3a3, #514760);
-  /* background: linear-gradient(to top, rgb(81, 71, 96, 0.6) 10%, transparent), url("./images/freedom.jpg") 50% 40%/cover no-repeat border-box, #514760; */
-  /* background-image: url("./freedom.jpg");
-  background-size: cover;
-  background-position: 50% 40%;
-  background-repeat: no-repeat;
-  background-origin: border-box;
-  background-clip: border-box;   */
-  /* background-image: linear-gradient(to bottom, #bfa3a3, #514760 ); */
-  /* background-image: radial-gradient(circle 300px at 15% 10%,  #bfa3a3,#514760); */
   width: 100vw;
   height: 60vh;
   position: relative;
@@ -61,7 +52,6 @@
 .plan--highlighted {
   background: #514760;
   color: #bbbbbb;
-  /* box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.5); */
 }
 
 .plan__annotation {
@@ -96,14 +86,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    }
+  }
 
   .plan {
     width: 30%;
     min-width: 13rem;
     max-width: 25rem;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: space-between;
     height: 28rem;
   }
@@ -149,21 +139,21 @@
   font-size: 1.2rem;
 }
 
-@media (min-width:40rem){
+@media (min-width: 40rem) {
   .key-feature {
     width: 30%;
-    max-width:25rem;
+    max-width: 25rem;
   }
 
   .key-feature__list {
     display: flex;
-    justify-content:center;
+    justify-content: center;
   }
 
   .modal {
-  top: 20%;
-  left: 30%;
-  width: 40%;
+    top: 20%;
+    left: 30%;
+    width: 40%;
   }
 }
 
@@ -172,8 +162,6 @@
   display: none;
   z-index: 200;
   top: 20%;
-  /* left: 30%; */
-  /* width: 40%; */
   background: white;
   padding: 1rem;
   border: 1px solid #ccc;
