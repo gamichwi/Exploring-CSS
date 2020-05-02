@@ -31,7 +31,7 @@ Creating a fake hosting website to re-visit old and explore new CSS Techniques l
 
 * Flexbox ☑
 
-* CSS Grid 𝤿
+* CSS Grid ☑
 
 * Transformations and Animations 𝤿
 
