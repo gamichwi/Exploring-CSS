@@ -74,16 +74,15 @@ main {
   .testimonial {
     margin: 1rem auto;
     max-width: 70rem;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
   }
 
   .testimonial__image-container {
-    display: inline-block;
-    vertical-align: middle;
     width: 66%;
   }
   .testimonial__info {
-    display: inline-block;
-    vertical-align: middle;
     width: 35%;
   }
   
