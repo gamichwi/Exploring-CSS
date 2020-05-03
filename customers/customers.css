@@ -9,6 +9,7 @@
   --stop-red: red;
   --highlight-green: #2ddf5c;
   --highlight-red: #ff5454;
+  --silver: #bbbbbb;
 }
 
 main {
@@ -75,7 +76,7 @@ main {
 .testimonial__subtitle a:hover,
 .testimonial__subtitle a:active {
   color: var(--main-purple);
-  border-bottom: 2px solid var(--main-purple);
+  border-bottom: 2px solid var(--main-purple) ;
 }
 
 .testimonial__text {
