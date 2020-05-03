@@ -1,3 +1,16 @@
+:root {
+  --main-purple: #514760;
+  --dark-purple: #1f1a24;
+  --main-white: #f7fcef;
+  --alt-white: #ccc;
+  --alt-purple: #bfa3a3;
+  --main-black: #000000;
+  --go-green: #0e4f1f; 
+  --stop-red: red;
+  --highlight-green: #2ddf5c;
+  --highlight-red: #ff5454;
+}
+
 main {
   padding-top: 1.5rem;
 }
@@ -5,7 +18,7 @@ main {
 .signup-title {
   text-align: center;
   font-size: 1.8rem;
-  color: #514760;
+  color: var(--main-purple);
 }
 
 .signup-form {
@@ -35,7 +48,7 @@ main {
 
 .signup-form input:not([type="checkbox"]),
 .signup-form select {
-  border: 1px solid #ccc;
+  border: 1px solid var(--alt-white);
   padding: 0.2rem 0.5rem;
   font: inherit;
 }
@@ -44,12 +57,12 @@ main {
 .signup-form select:focus {
   outline: none;
   background: rgba(191, 163, 163, 0.25);
-  border-color: #514760;
+  border-color: var(--main-purple);
 }
 
 .signup-form input[type="checkbox"] {
-  border: 1px solid #ccc;
-  background: #f7fcef;
+  border: 1px solid var(--alt-white);
+  background: var(--main-white);
   width: 1rem;
   height: 1rem;
   -webkit-appearance: none;
@@ -58,13 +71,13 @@ main {
 }
 
 .signup-form input[type="checkbox"]:checked {
-  background: #bfa3a3;
-  border-color: #514760;
+  background: var(--alt-purple);
+  border-color: var(--main-purple);
 }
 
 .signup-form input[type="checkbox"]:checked:after {
   background: rgba(191, 163, 163, 0.25);
-  border-color: #514760;
+  border-color: var(--main-purple);
   content: "✔";
   text-align: center;
   font: inherit;
@@ -77,25 +90,25 @@ main {
 .signup-form input.invalid,
 .signup-form select.invalid,
 .signup-form :invalid {
-  border-color: red !important;
+  border-color: var(--stop-red) !important;
   background: rgba(255, 84, 84, 0.5);
 }
 
 .signup-form button[type="submit"] {
   display: block;
   font-size: 0.875rem;
-  color: #f7fcef;
-  background: #514760;
+  color: var(--main-white);
+  background: var(--main-purple);
   padding: 0.5rem 1rem;
   border-radius: 8px;
-  border: 1px solid #f7fcef;
+  border: 1px solid var(--main-white);
 }
 
 .signup-form button[type="submit"]:hover,
 .signup-form button[type="submit"]:active {
-  color: #514760;
-  background: #f7fcef;
-  border: 1px solid #514760;
+  color: var(--main-purple);
+  background: var(--main-white);
+  border: 1px solid var(--main-purple);
 }
 
 @media (min-width: 40rem) {

@@ -47,7 +47,7 @@ for (let i = 0; i < selectPlanButtons.length; i++) {
   }
 
   toggleButton.addEventListener("click", () => {
-    console.log("clicked");
+    // console.log("clicked");
     if ((mobileNav.style.display = "none")) {
       mobileNav.style.display = "block";
     }

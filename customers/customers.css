@@ -1,3 +1,16 @@
+:root {
+  --main-purple: #514760;
+  --dark-purple: #1f1a24;
+  --main-white: #f7fcef;
+  --alt-white: #ccc;
+  --alt-purple: #bfa3a3;
+  --main-black: #000000;
+  --go-green: #0e4f1f; 
+  --stop-red: red;
+  --highlight-green: #2ddf5c;
+  --highlight-red: #ff5454;
+}
+
 main {
   padding-top: 1.5rem;
 }
@@ -44,14 +57,14 @@ main {
 
 .testimonial__name {
   margin: 0.2rem;
-  color: #514760;
+  color: var(--main-purple);
   font-size: 2em;
 }
 
 .testimonial__subtitle {
   margin: 0;
   font-size: 1.1rem;
-  color: #bfa3a3;
+  color: var(--alt-purple);
 }
 
 .testimonial__subtitle a {
@@ -61,8 +74,8 @@ main {
 
 .testimonial__subtitle a:hover,
 .testimonial__subtitle a:active {
-  color: #514760;
-  border-bottom: 2px solid #514760;
+  color: var(--main-purple);
+  border-bottom: 2px solid var(--main-purple);
 }
 
 .testimonial__text {

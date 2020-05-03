@@ -1,3 +1,16 @@
+:root {
+  --main-purple: #514760;
+  --dark-purple: #1f1a24;
+  --main-white: #f7fcef;
+  --alt-white: #ccc;
+  --alt-purple: #bfa3a3;
+  --main-black: #000000;
+  --go-green: #0e4f1f; 
+  --stop-red: red;
+  --highlight-green: #2ddf5c;
+  --highlight-red: #ff5454;
+}
+
 main {
   padding-top: 1.5rem;
 }
@@ -14,7 +27,7 @@ main {
 .package {
   width: 80%;
   margin: 1rem 0;
-  border: 4px solid #514760;
+  border: 4px solid var(--main-purple);
   border-radius: 8px;
   border-left: none;
   position: relative;
@@ -24,7 +37,7 @@ main {
 .package:hover,
 .package:active {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  border-color: #1f1a24;
+  border-color: var(--dark-purple);
 }
 
 .package a {
@@ -40,8 +53,8 @@ main {
   right: 0;
   margin: 0;
   font-size: 0.8rem;
-  color: #f7fcef;
-  background: #514760;
+  color: var(--main-white);
+  background: var(--main-purple);
   padding: 0.5rem;
   transform: rotate(45deg) translate(3.5rem, -1rem); 
   transform-origin: center;
@@ -49,16 +62,16 @@ main {
   text-align: center;
 }
 .package__subtitle {
-  color: #f7fcef;
+  color: var(--main-white);
 }
 
 .package__info {
   padding: 1rem;
-  border: 1px solid #1f1a24;
+  border: 1px solid var(--dark-purple);
   border-radius: 8px;
   font-size: 1.2rem;
-  color: #514760;
-  background: #f7fcef;
+  color: var(--main-purple);
+  background: var(--main-white);
 }
 
 .clearfix {
@@ -73,29 +86,29 @@ main {
   background: rgba(247, 252, 239, 0.95);
   float: right;
   border-right: none;
-  border-left: 4px solid #514760;
+  border-left: 4px solid var(--main-purple);
   text-align: right;
 }
 
 #free:hover,
 #free:active {
-  border-left: 4px solid #1f1a24;
+  border-left: 4px solid var(--dark-purple);
 }
 
 #free .package__subtitle {
-  color: #bfa3a3;
+  color: var(--alt-purple);
 }
 
 #premium {
-  background: rgb(81, 71, 96);
+  background: var(--main-purple);
 }
 
 #premium .package__title {
-  color: #f7fcef;
+  color: var(--main-white);
 }
 
 #premium .package__subtitle {
-  color: #1f1a24;
+  color: var(--dark-purple);
 }
 
 @media (min-width: 40rem) {
@@ -108,15 +121,15 @@ main {
 
 @media (min-width: 80rem) {
   .package {
-    border-left: 4px solid #514760;
+    border-left: 4px solid var(--main-purple);
   }
 
   #free {
-    border-right: 4px solid #514760;
+    border-right: 4px solid var(--main-purple);
   }
 
   #free:hover,
   #free:active {
-    border-right-color: #1f1a24;
+    border-right-color: var(--dark-purple);
   }
 }
