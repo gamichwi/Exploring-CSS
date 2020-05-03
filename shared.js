@@ -12,7 +12,7 @@ for (let i = 0; i < selectPlanButtons.length; i++) {
     planButton.addEventListener("click", () => {
       modal.style.display = "block";
     });
-    
+
     selectPlanButtons[i].addEventListener("click", () => {
       modal.classList.add("open");
       backdrop.style.display = "block";
@@ -22,6 +22,7 @@ for (let i = 0; i < selectPlanButtons.length; i++) {
       }, 10);
     });
   }
+}
 
   const closeModal = () => {
     if (modal) {
@@ -46,7 +47,10 @@ for (let i = 0; i < selectPlanButtons.length; i++) {
   }
 
   toggleButton.addEventListener("click", () => {
-    mobileNav.style.display = "block"; //added for mobile-nav slide-out
+    console.log("clicked");
+    if ((mobileNav.style.display = "none")) {
+      mobileNav.style.display = "block";
+    }
 
     backdrop.style.display = "block";
     if (modal) {
@@ -58,7 +62,6 @@ for (let i = 0; i < selectPlanButtons.length; i++) {
       mobileNav.classList.add("open");
     }, 10);
   });
-}
 
 // ctaButton.addEventListener("animationstart", () => {
 //   console.log('animation started', event);
