@@ -5,7 +5,7 @@
   --alt-white: #ccc;
   --alt-purple: #bfa3a3;
   --main-black: #000000;
-  --go-green: #0e4f1f; 
+  --go-green: #0e4f1f;
   --stop-red: red;
   --highlight-green: #2ddf5c;
   --highlight-red: #ff5454;
@@ -26,7 +26,7 @@ main {
   box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.3);
   /* transform: skew(20deg); */
   overflow: hidden;
-  margin:auto;
+  margin: auto;
 }
 
 #customer-1:hover .testimonial__image-container {
@@ -76,7 +76,7 @@ main {
 .testimonial__subtitle a:hover,
 .testimonial__subtitle a:active {
   color: var(--main-purple);
-  border-bottom: 2px solid var(--main-purple) ;
+  border-bottom: 2px solid var(--main-purple);
 }
 
 .testimonial__text {
@@ -87,6 +87,9 @@ main {
   .testimonial {
     margin: 1rem auto;
     max-width: 70rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -98,8 +101,7 @@ main {
   .testimonial__image-container {
     width: 66%;
     transform: skew(20deg);
-    margin:0;
-
+    margin: 0;
   }
   .testimonial__info {
     width: 35%;

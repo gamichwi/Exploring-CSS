@@ -5,7 +5,7 @@
   --alt-white: #ccc;
   --alt-purple: #bfa3a3;
   --main-black: #000000;
-  --go-green: #0e4f1f; 
+  --go-green: #0e4f1f;
   --stop-red: red;
   --highlight-green: #2ddf5c;
   --highlight-red: #ff5454;
@@ -82,8 +82,11 @@ main {
   content: "✔";
   text-align: center;
   font: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -124,5 +127,4 @@ main {
   .signup-form__checkbox {
     grid-column: span 2;
   }
-
 }

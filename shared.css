@@ -7,7 +7,7 @@
   --alt-white: #ccc;
   --alt-purple: #bfa3a3;
   --main-black: #000000;
-  --go-green: #0e4f1f; 
+  --go-green: #0e4f1f;
   --stop-red: red;
   --highlight-green: #2ddf5c;
   --highlight-red: #ff5454;
@@ -54,6 +54,9 @@ main {
   background: var(--main-purple);
   padding: 0.5rem 1rem;
   z-index: 60;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -94,6 +97,9 @@ main {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 
@@ -144,6 +150,9 @@ main {
   }
 
   .main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
   }
 }
@@ -159,6 +168,9 @@ main {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -199,6 +211,9 @@ main {
   list-style: none;
   margin: 0 auto;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   justify-content: center;
