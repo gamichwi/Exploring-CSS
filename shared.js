@@ -5,58 +5,60 @@ const selectPlanButtons = document.querySelectorAll(".plan button");
 const toggleButton = document.querySelector(".toggle-button");
 const mobileNav = document.querySelector(".mobile-nav");
 const ctaButton = document.querySelector(".main-nav__item--cta");
-const planButton = document.querySelector(".plan__list button")
+const planButton = document.querySelector(".plan__list button");
 
 for (let i = 0; i < selectPlanButtons.length; i++) {
-  selectPlanButtons[i].addEventListener("click", () => {
-    modal.classList.add("open");
+  if (planButton) {
+    planButton.addEventListener("click", () => {
+      modal.style.display = "block";
+    });
+    
+    selectPlanButtons[i].addEventListener("click", () => {
+      modal.classList.add("open");
+      backdrop.style.display = "block";
+
+      setTimeout(() => {
+        backdrop.classList.add("open");
+      }, 10);
+    });
+  }
+
+  const closeModal = () => {
+    if (modal) {
+      modal.classList.remove("open");
+    }
+    backdrop.classList.remove("open");
+    mobileNav.classList.remove("open");
+    setTimeout(() => {
+      backdrop.style.display = "none";
+    }, 200);
+  };
+
+  backdrop.addEventListener("click", () => {
+    setTimeout(() => {
+      mobileNav.style.display = "none";
+    }, 600);
+    closeModal();
+  });
+
+  if (modalNoButton) {
+    modalNoButton.addEventListener("click", closeModal);
+  }
+
+  toggleButton.addEventListener("click", () => {
+    mobileNav.style.display = "block"; //added for mobile-nav slide-out
+
     backdrop.style.display = "block";
+    if (modal) {
+      modal.style.display = "none";
+    }
+
     setTimeout(() => {
       backdrop.classList.add("open");
+      mobileNav.classList.add("open");
     }, 10);
   });
 }
-
-const closeModal = () => {
-  if (modal) {
-    modal.classList.remove("open");
-  }
-  backdrop.classList.remove("open");
-  setTimeout(function() {
-    backdrop.style.display = "none";
-  }, 200);
-};
-
-backdrop.addEventListener("click", () => {
-  mobileNav.classList.remove("open");
-  closeModal();
-});
-
-if (modalNoButton) {
-  modalNoButton.addEventListener("click", closeModal);
-}
-
-toggleButton.addEventListener("click", () => {
-  mobileNav.classList.add("open");
-  backdrop.style.display = "block";
-  if(modal) {
-    modal.style.display = "none";
-  }
-
-  setTimeout(() => {
-    backdrop.classList.add("open");
-
-  }, 10);
-});
-
-if (planButton) {
-  planButton.addEventListener("click", () => {
-    modal.style.display = "block";
-
-})
-
-
-};
 
 // ctaButton.addEventListener("animationstart", () => {
 //   console.log('animation started', event);
