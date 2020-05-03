@@ -26,10 +26,15 @@ main {
 
 .signup-form {
   padding: auto;
-  display: -ms-grid;
-  display: grid;
-  grid-auto-rows: 2.5rem;
-  grid-row-gap: 0.25rem;
+}
+
+@supports (display: grid) {
+  .signup-form {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-rows: 2.5rem;
+    grid-row-gap: 0.25rem;
+  }
 }
 
 .signup-form label {
