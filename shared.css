@@ -104,6 +104,10 @@ main {
   border-bottom: 2px solid #f7fcef;
 }
 
+.main-nav__item--cta {
+  animation: wiggle 400ms 3s 5 ease-out none;
+}
+
 .main-nav__item--cta a,
 .mobile-nav__item--cta a {
   color: #f7fcef;
@@ -253,5 +257,17 @@ main {
   .main-footer__links {
     flex-direction: row;
     justify-content: center;
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotateZ(0);
+  }
+  50% {
+    transform: rotateZ(-10deg);
+  }
+  100% {
+    transform: rotateZ(10deg);
   }
 }
