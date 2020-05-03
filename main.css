@@ -168,6 +168,7 @@
   padding: 1rem;
   border: 1px solid #ccc;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  display: none;
 }
 
 .modal__title {

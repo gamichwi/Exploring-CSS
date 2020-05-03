@@ -17,8 +17,6 @@ body {
 }
 
 main {
-  /* margin-top: 2rem; */
-  /* grid-row: 2 / 3; */
   grid-area: main;
 }
 
@@ -78,6 +76,7 @@ main {
 .main-nav {
   display: none;
 }
+
 
 .main-nav__items {
   margin: 0;
@@ -177,6 +176,10 @@ main {
   background: #f7fcef;
   width: 80%;
   height: 100vh;
+  transform: translateX(-3rem);
+  opacity:0;
+  transition: opacity 200ms ease-out .2s, transform 500ms ease-out .2s;
+
 }
 
 .mobile-nav__items {
@@ -189,7 +192,9 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
+
 .mobile-nav__item {
   margin: 1rem 0;
 }
@@ -271,3 +276,4 @@ main {
     transform: rotateZ(10deg);
   }
 }
+
