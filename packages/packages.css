@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 :root {
   --main-purple: #514760;
   --dark-purple: #1f1a24;
@@ -5,7 +7,7 @@
   --alt-white: #ccc;
   --alt-purple: #bfa3a3;
   --main-black: #000000;
-  --go-green: #0e4f1f; 
+  --go-green: #0e4f1f;
   --stop-red: red;
   --highlight-green: #2ddf5c;
   --highlight-red: #ff5454;
@@ -18,6 +20,7 @@ main {
 
 .background {
   background: url("../images/plans-background.jpg") center/cover;
+  -webkit-filter: grayscale(40%);
   filter: grayscale(40%);
   width: 100vw;
   height: 100vh;
@@ -37,6 +40,7 @@ main {
 
 .package:hover,
 .package:active {
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   border-color: var(--dark-purple);
 }
@@ -57,7 +61,11 @@ main {
   color: var(--main-white);
   background: var(--main-purple);
   padding: 0.5rem;
-  transform: rotate(45deg) translate(3.5rem, -1rem); 
+  -webkit-transform: rotate(45deg) translate(3.5rem, -1rem);
+  -ms-transform: rotate(45deg) translate(3.5rem, -1rem);
+  transform: rotate(45deg) translate(3.5rem, -1rem);
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
   transform-origin: center;
   width: 12rem;
   text-align: center;

@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 
 :root {
@@ -14,6 +16,7 @@
 }
 
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -21,7 +24,9 @@ body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   overflow-x: hidden;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-rows: 3.5rem auto fit-content(8rem);
   grid-template-rows: 3.5rem auto fit-content(8rem);
   grid-template-areas:
     "header"
@@ -30,6 +35,8 @@ body {
 }
 
 main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: main;
 }
 
@@ -43,6 +50,8 @@ main {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: opacity 400ms linear;
+  -o-transition: opacity 400ms linear;
   transition: opacity 400ms linear;
 }
 
@@ -56,9 +65,12 @@ main {
   z-index: 60;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -99,7 +111,6 @@ main {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
 }
 
@@ -122,6 +133,7 @@ main {
 }
 
 .main-nav__item--cta {
+  -webkit-animation: wiggle 400ms 3s 5 ease-out none;
   animation: wiggle 400ms 3s 5 ease-out none;
 }
 
@@ -141,6 +153,7 @@ main {
   background: var(--main-white);
   color: var(--main-purple);
   border: 1px solid var(--main-purple);
+  -webkit-box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.3);
   box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.3);
 }
 
@@ -152,12 +165,13 @@ main {
   .main-nav {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
   }
 }
 
 .main-footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   background-color: var(--main-black);
   padding: 1rem;
   margin-top: 3rem;
@@ -170,9 +184,13 @@ main {
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -195,8 +213,16 @@ main {
   display: none;
   position: fixed;
   opacity: 0;
+  -webkit-transform: translate(-3rem);
+  -ms-transform: translate(-3rem);
   transform: translate(-3rem);
+  -webkit-transition: opacity 400ms ease-out 0.2s,
+    -webkit-transform 500ms ease-out 0.2s;
+  transition: opacity 400ms ease-out 0.2s, -webkit-transform 500ms ease-out 0.2s;
+  -o-transition: opacity 400ms ease-out 0.2s, transform 500ms ease-out 0.2s;
   transition: opacity 400ms ease-out 0.2s, transform 500ms ease-out 0.2s;
+  transition: opacity 400ms ease-out 0.2s, transform 500ms ease-out 0.2s,
+    -webkit-transform 500ms ease-out 0.2s;
   z-index: 101;
   top: 0;
   left: 0;
@@ -213,10 +239,16 @@ main {
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -276,6 +308,8 @@ main {
 .open {
   display: block !important;
   opacity: 1 !important;
+  -webkit-transform: translateY(0) !important;
+  -ms-transform: translateY(0) !important;
   transform: translateY(0) !important;
 }
 
@@ -285,19 +319,42 @@ main {
   }
 
   .main-footer__links {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+  }
+}
+
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: rotateZ(0);
+    transform: rotateZ(0);
+  }
+  50% {
+    -webkit-transform: rotateZ(-10deg);
+    transform: rotateZ(-10deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(10deg);
+    transform: rotateZ(10deg);
   }
 }
 
 @keyframes wiggle {
   0% {
+    -webkit-transform: rotateZ(0);
     transform: rotateZ(0);
   }
   50% {
+    -webkit-transform: rotateZ(-10deg);
     transform: rotateZ(-10deg);
   }
   100% {
+    -webkit-transform: rotateZ(10deg);
     transform: rotateZ(10deg);
   }
 }

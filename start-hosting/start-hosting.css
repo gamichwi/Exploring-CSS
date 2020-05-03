@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 :root {
   --main-purple: #514760;
   --dark-purple: #1f1a24;
@@ -24,6 +26,7 @@ main {
 
 .signup-form {
   padding: auto;
+  display: -ms-grid;
   display: grid;
   grid-auto-rows: 2.5rem;
   grid-row-gap: 0.25rem;
@@ -84,10 +87,16 @@ main {
   font: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -119,12 +128,14 @@ main {
   .signup-form {
     margin: auto;
     width: 30rem;
+    -ms-grid-columns: 10rem 0.5rem auto;
     grid-template-columns: 10rem auto;
     grid-row-gap: 2rem;
     grid-column-gap: 0.5rem;
   }
 
   .signup-form__checkbox {
+    -ms-grid-column-span: 2;
     grid-column: span 2;
   }
 }

@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 :root {
   --main-purple: #514760;
   --dark-purple: #1f1a24;
@@ -23,6 +25,7 @@ main {
 .testimonial__image-container {
   width: 80%;
   max-width: 40rem;
+  -webkit-box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.3);
   box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.3);
   /* transform: skew(20deg); */
   overflow: hidden;
@@ -30,10 +33,12 @@ main {
 }
 
 #customer-1:hover .testimonial__image-container {
+  -webkit-animation: flip-customer 1s ease-out none;
   animation: flip-customer 1s ease-out none;
 }
 
 #customer-2:hover .testimonial__image-container {
+  -webkit-animation: flip-customer 1s ease-out none;
   animation: flip-customer 1s ease-out none;
 }
 
@@ -89,17 +94,23 @@ main {
     max-width: 70rem;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
   }
   .testimonial__image {
+    -webkit-transform: skew(-20deg) scale(1.4);
+    -ms-transform: skew(-20deg) scale(1.4);
     transform: skew(-20deg) scale(1.4);
   }
 
   .testimonial__image-container {
     width: 66%;
+    -webkit-transform: skew(20deg);
+    -ms-transform: skew(20deg);
     transform: skew(20deg);
     margin: 0;
   }
@@ -108,14 +119,32 @@ main {
   }
 }
 
-@keyframes flip-customer {
+@-webkit-keyframes flip-customer {
   0% {
+    -webkit-transform: rotateY(0) skew(20deg);
     transform: rotateY(0) skew(20deg);
   }
   50% {
+    -webkit-transform: rotateY(160deg) skew(20deg);
     transform: rotateY(160deg) skew(20deg);
   }
   100% {
+    -webkit-transform: rotateY(360deg) skew(20deg);
+    transform: rotateY(360deg) skew(20deg);
+  }
+}
+
+@keyframes flip-customer {
+  0% {
+    -webkit-transform: rotateY(0) skew(20deg);
+    transform: rotateY(0) skew(20deg);
+  }
+  50% {
+    -webkit-transform: rotateY(160deg) skew(20deg);
+    transform: rotateY(160deg) skew(20deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg) skew(20deg);
     transform: rotateY(360deg) skew(20deg);
   }
 }
